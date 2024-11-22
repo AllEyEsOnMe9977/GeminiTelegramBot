@@ -1,22 +1,31 @@
-## Getting Started
+## Setup Instructions
 
-Follow the steps below to set up and run the Gemini Telegram Bot:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/AllEyEsOnMe9977/GeminiTelegramBot.git
+    ```
 
-```bash
-# Clone the repository
-git clone https://github.com/AllEyEsOnMe9977/GeminiTelegramBot.git
+2. Navigate to the project directory:
+    ```bash
+    cd GeminiTelegramBot
+    ```
 
-# Navigate to the project directory
-cd GeminiTelegramBot
+3. Set up the workspace:
+    ```bash
+    CreateWorkSpace.bat
+    ```
 
-# Set up the workspace
-CreateWorkSpace.bat
+4. Install the required dependencies:
+    ```bash
+    installDeps.bat
+    ```
 
-# Install required dependencies
-installDeps.bat
+5. Configure the bot (e.g., API keys, tokens):
+    ```bash
+    config.bat
+    ```
 
-# Configure the bot (e.g., set API keys and tokens)
-config.bat
-
-# Launch the bot
-launch.bat
+6. Launch the bot:
+    ```bash
+    launch.bat
+    ```
