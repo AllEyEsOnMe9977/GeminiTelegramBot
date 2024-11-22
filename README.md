@@ -1,25 +1,17 @@
-# Clone the repository from GitHub to your local machine.
-# This will create a folder named "GeminiTelegramBot" containing the project files.
+# Clone the repository to your local machine.
 git clone https://github.com/AllEyEsOnMe9977/GeminiTelegramBot.git
 
-# Navigate into the cloned "GeminiTelegramBot" directory.
-# Ensure you're in the correct folder before executing further scripts.
+# Navigate to the project directory.
 cd GeminiTelegramBot
 
-# Run the CreateWorkSpace.bat script to set up the project workspace.
-# This might involve creating necessary folders or preparing the environment.
+# Set up the workspace.
 CreateWorkSpace.bat
 
-# Execute the installDeps.bat script to install project dependencies.
-# This typically involves downloading and setting up required libraries or packages.
+# Install necessary dependencies.
 installDeps.bat
 
-# Run the config.bat script to configure the bot.
-# You'll likely be prompted to provide API keys, tokens, or other configuration details.
+# Configure the bot (e.g., set API keys).
 config.bat
 
-# Launch the bot by executing the launch.bat script.
-# This script starts the bot and initializes its operation.
+# Start the bot.
 launch.bat
-
-
