@@ -25,17 +25,17 @@
     config.bat
     ```
 ✔️ for Gemini api key, go to the link below
-```bash
-https://aistudio.google.com/app/apikey
-```
+   ```bash
+   https://aistudio.google.com/app/apikey
+   ```
 ✔️ for telegram bot token, use the Telegram Bot below
-```bash
-@botfather
-```
+   ```bash
+   @botfather
+   ```
 ✔️ for you own telegram user id, use the Telegram Bot below
-```bash
-@JsonDumpBot
-```
+   ```bash
+   @JsonDumpBot
+   ```
 6. Launch the bot:
     ```bash
     launch.bat
