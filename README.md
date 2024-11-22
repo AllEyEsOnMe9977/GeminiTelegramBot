@@ -24,15 +24,15 @@
     ```bash
     config.bat
     ```
-✔️ for Gemini api key, go to the link below
+✔️for Gemini api key, go to the link below
    ```bash
    https://aistudio.google.com/app/apikey
    ```
-✔️ for telegram bot token, use the Telegram Bot below
+✔️for telegram bot token, use the Telegram Bot below
    ```bash
    @botfather
    ```
-✔️ for you own telegram user id, use the Telegram Bot below
+✔️for you own telegram user id, use the Telegram Bot below
    ```bash
    @JsonDumpBot
    ```
