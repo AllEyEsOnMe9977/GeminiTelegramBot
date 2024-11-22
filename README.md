@@ -2,7 +2,7 @@
 
 This repository contains the code for the Gemini Telegram Bot (written in nodejs), which allows users to interact with the Gemini API and analyze various file types, such as images, audio, PDF, and video. Follow the instructions below to set up and configure the bot.
 
-[💎 make sure to have npm installed on your machine](https://nodejs.org/en/download/package-manager)
+💎[make sure to have npm installed on your machine](https://nodejs.org/en/download/package-manager)
 
 ## Setup Instructions
 
