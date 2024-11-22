@@ -65,3 +65,7 @@ This repository contains the code for the Gemini Telegram Bot, which allows user
 ---
 
 With these steps, your Gemini Telegram Bot should be fully set up and ready to interact with users. Enjoy analyzing images, audio, PDFs, and videos through Telegram!
+
+**P.S:**
+
+**The bot operates in Persian, but it is capable of responding in English for analysis requests or AI-based conversations**
