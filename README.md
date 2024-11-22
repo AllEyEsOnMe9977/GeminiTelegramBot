@@ -12,7 +12,7 @@
 
 3. Set up the workspace:
     ```bash
-    CreateWorkSpace.bat
+    createWorkSpace.bat
     ```
 
 4. Install the required dependencies:
@@ -24,18 +24,11 @@
     ```bash
     config.bat
     ```
-✔️for Gemini api key, go to the link below
-   ```bash
-   https://aistudio.google.com/app/apikey
-   ```
-✔️for telegram bot token, use the Telegram Bot below
-   ```bash
-   @botfather
-   ```
-✔️for you own telegram user id, use the Telegram Bot below
-   ```bash
-   @JsonDumpBot
-   ```
+    - ✔️ For the Gemini API key, visit the link below:
+      - [Gemini API link] (https://aistudio.google.com/app/apikey)
+    - ✔️ For the Telegram bot token, use the [@BotFather on Telegram](https://t.me/BotFather).
+    - ✔️ For your own Telegram user ID, use the [@JsonDumpBot on Telegram](https://t.me/JsonDumpBot).
+
 6. Launch the bot:
     ```bash
     launch.bat
