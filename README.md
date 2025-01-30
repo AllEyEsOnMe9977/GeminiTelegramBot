@@ -1,73 +1,138 @@
-# Gemini Telegram Bot
+# Gemini Telegram Bot 🚀
 
-This repository contains the code for the Gemini Telegram Bot (written in nodejs), which allows users to interact with the Gemini API and analyze various file types, such as images, audio, PDF, and video. Follow the instructions below to set up and configure the bot.
+This repository contains the code for the **Gemini Telegram Bot** (written in **Node.js**), which allows users to interact with the **Gemini API** and analyze various file types, such as **images, audio, PDFs, and videos** directly through Telegram.  
 
-💎[make sure to have npm installed on your machine](https://nodejs.org/en/download/package-manager)
-
-## Setup Instructions
-
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/AllEyEsOnMe9977/GeminiTelegramBot.git
-    ```
-
-2. **Navigate to the project directory:**
-    ```bash
-    cd GeminiTelegramBot
-    ```
-
-3. **Set up the workspace:**
-    ```bash
-    createWorkSpace.bat
-    ```
-
-4. **Install the required dependencies:**
-    ```bash
-    installDeps.bat
-    ```
-
-5. **Configure the bot (e.g., API keys, tokens):**
-    ```bash
-    config.bat
-    ```
-    - ✔️ For the Gemini API key, visit the link below:
-      - [Gemini API link](https://aistudio.google.com/app/apikey)
-    - ✔️ For the Telegram bot token, use the [@BotFather on Telegram](https://t.me/BotFather).
-    - ✔️ For your own Telegram user ID, use the [@JsonDumpBot on Telegram](https://t.me/JsonDumpBot).
-
-6. **Set up Bot Commands in BotFather:**
-
-    To set up custom commands for your bot, follow these steps:
-
-    - Open **[BotFather](https://t.me/BotFather)** in Telegram.
-    - Start a chat with BotFather and use the command `/mybots` to select your bot.
-    - Choose your bot and go to **Bot Settings**.
-    - Tap on **/setcommands** to configure your bot’s command list.
-    - Add the following commands with emojis (copy and paste this list):
-    
-    ```
-    start - 🚀 Initiate the bot
-    endchat - ❌ End the current chat
-    startchat - 💬 Start a new chat
-    imageanalyze - 🖼️ Analyze an image
-    audioanalyze - 🎧 Analyze an audio file
-    pdfanalyze - 📄 Analyze a PDF file
-    videoanalyze - 🎥 Analyze a video file
-    setkey - 🔑 Set a Gemini API key
-    help - 📚 Tutorial
-    ```
-
-    - After adding these commands, your bot will show a custom command list to users when they type `/` in the chat.
-   
-7. **Launch the bot:**
-    ```bash
-    launch.bat
-    ```
+Follow the steps below to **install, configure, and run** the bot on your machine.
 
 ---
 
-With these steps, your Gemini Telegram Bot should be fully set up and ready to interact with users. Enjoy analyzing images, audio, PDFs, and videos through Telegram!
+## 📌 Prerequisites
 
-**P.S:**
+- **[Node.js & npm](https://nodejs.org/en/download/package-manager)**
+- **[Git](https://git-scm.com/downloads)**
+- (For Linux) **Ensure pm2 is installed globally**  
+  _(Don't worry, our script installs it automatically if it's missing!)_
 
-**The bot operates in Persian, but it is capable of responding in English for analysis requests or AI-based conversations**
+---
+
+## 🔧 Setup Instructions
+
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/AllEyEsOnMe9977/GeminiTelegramBot.git
+```
+
+### 2️⃣ Navigate to the project directory  
+```bash
+cd GeminiTelegramBot
+```
+
+### 3️⃣ Run the setup script
+
+#### 👉 **For Linux/macOS:**
+```bash
+chmod +x setup.sh && sudo ./setup.sh
+```
+
+#### 👉 **For Windows (Run as Administrator):**
+```cmd
+setup.bat
+```
+
+- This script:
+  - Initializes the **npm project**
+  - Installs all required dependencies, including `pm2`
+  - Asks for **Bot Token** & **Admin User ID**
+  - Generates the `.env` file automatically
+  - Starts the bot with **pm2** and configures it to run on system startup
+
+---
+
+## 🔑 Configuration
+
+During setup, you will be asked to **enter API keys** for proper bot operation:
+
+- ✔️ **Get a Gemini API key** from:
+  - [Google Gemini API Key](https://aistudio.google.com/app/apikey)
+- ✔️ **Get your Telegram bot token** from:
+  - [@BotFather on Telegram](https://t.me/BotFather)
+- ✔️ **Get your Telegram User ID** from:
+  - [@JsonDumpBot on Telegram](https://t.me/JsonDumpBot)
+
+---
+
+## 🤖 Setting Up Bot Commands in BotFather
+
+To configure bot commands:
+
+1. Open **[@BotFather](https://t.me/BotFather)** in Telegram.
+2. Send `/mybots` and select your bot.
+3. Go to **Bot Settings** → **/setcommands**.
+4. Copy and paste the following command list:
+
+   ```
+   start - 🚀 Initiate the bot
+   endchat - ❌ End the current chat
+   startchat - 💬 Start a new chat
+   imageanalyze - 🖼️ Analyze an image
+   audioanalyze - 🎧 Analyze an audio file
+   pdfanalyze - 📄 Analyze a PDF file
+   videoanalyze - 🎥 Analyze a video file
+   setkey - 🔑 Set a Gemini API key
+   help - 📚 Tutorial
+   ```
+
+5. Save the changes, and now your bot will show these commands when users type `/`.
+
+---
+
+## 🚀 Running & Managing the Bot with pm2
+
+### ✅ Check if the bot is running:
+```bash
+pm2 status
+```
+
+### 🔍 View bot logs:
+```bash
+pm2 logs gemini-bot
+```
+
+### ⏹️ Stop the bot:
+```bash
+pm2 stop gemini-bot
+```
+
+### 🔄 Restart the bot:
+```bash
+pm2 restart gemini-bot
+```
+
+### ♻️ Make sure the bot runs on startup:
+```bash
+pm2 startup
+pm2 save
+```
+
+---
+
+## 🎯 Bot Features
+
+- 🖼️ **Image Analysis** (Extract insights from images)
+- 🎧 **Audio Analysis** (Process and transcribe audio files)
+- 📄 **PDF Analysis** (Summarize or extract text from PDFs)
+- 🎥 **Video Analysis** (Analyze video content)
+- 🤖 **AI-powered Conversations** (Powered by Google Gemini AI)
+- 🔒 **Secure & Encrypted** (Uses strong encryption for API keys)
+
+---
+
+## 🌐 Language Support
+
+**The bot operates in Persian**, but it can also **respond in English** for AI-based conversations and analysis requests.
+
+---
+
+## 🎉 Enjoy using the Gemini Telegram Bot!  
+
+If you find this project useful, consider **starring ⭐ the repository** to support development!
